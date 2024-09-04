@@ -4,8 +4,7 @@ let nameHtml = "";
 let names = ["Carl", "Yaniss", "Morten", "Sander", "Lise", "Thea"];
 
 
-const outputVowels = document.getElementById('outputVowels')
 const vowels = "aeiouyæøå" ; 
 let howManyVowels = [];
-let userInputWord = ""
+let vowelInput = "____"
 let vowelResult = 0;

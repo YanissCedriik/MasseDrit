@@ -3,7 +3,7 @@
 const app = document.getElementById("app");
 
 //--------------------------------------------------------
-updateView()
+updateView();
 
 function updateView() {
   app.innerHTML = /*HTML*/ ` 
@@ -20,9 +20,13 @@ function updateView() {
     
     
     <br><br><br><br><br>
+    
     <h3>Vokal teller </h3>
-    <div id="outputVowels">${vowelResult}</div>
-    <input id="inputWordToCheck" type="text" placeholder ="Sjekk ord eller setning">
+    <div id="outputVowels">${vowelInput} har ${vowelResult} vokaler.</div>
+    
+    <input onchange="vowelInput = this.value" type="text" 
+    placeholder="Sjekk ord eller setning">
+    
     <button onclick="checkVowels()">Sjekk</button>
   `;
 }
